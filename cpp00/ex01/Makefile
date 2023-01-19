@@ -6,17 +6,17 @@
 #    By: nchow-yu <nchow-yu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/08 20:47:20 by nchow-yu          #+#    #+#              #
-#    Updated: 2023/01/08 20:47:49 by nchow-yu         ###   ########.fr        #
+#    Updated: 2023/01/09 14:31:42 by nchow-yu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
-SRCS	=	phonebook.cpp
+SRCS	=	PhoneBook.cpp Contact.cpp main.cpp
 
 OBJS	=	${SRCS:.cpp=.o}
 CC		=	c++
 CFLAGS	=	-Wall -Werror -Wextra -std=c++98 -g3 -O0 -fsanitize=address
-NAME	=	megaphone
+NAME	=	phonebook
 
 %.o:	%.c
 	${CC} ${CFLAGS} -c $< -o ${<:.c=.o}
